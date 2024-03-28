@@ -10,13 +10,13 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { ref, onBeforeMount } from "vue";
 import {
+  useRoute,
   LocationQueryValue,
   onBeforeRouteUpdate,
   RouteLocationNormalized,
   RouteLocationNormalizedLoaded,
-  useRoute,
 } from "vue-router";
 
 import { getUsers, IUser } from "@/services/users";
@@ -28,7 +28,7 @@ const route = useRoute();
 const loading = ref(false);
 const users = ref<IUser[] | null>(null);
 
-onMounted(() => {
+onBeforeMount(() => {
   fetchUsers(route);
 });
 
