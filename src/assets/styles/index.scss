@@ -1,0 +1,92 @@
+/* stylelint-disable at-rule-empty-line-before */
+@import "./core/normalize.scss";
+@import "./core/variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: block;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.cup {
+  cursor: pointer;
+}
+
+.df {
+  display: flex;
+}
+
+.dg {
+  display: grid;
+}
+
+.fww {
+  flex-wrap: wrap;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.dif {
+  display: inline-flex;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcfs {
+  justify-content: flex-start;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.aic {
+  align-items: center;
+}
+
+.aife {
+  align-items: flex-end;
+}
+
+.aifs {
+  align-items: flex-start;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.fdr {
+  flex-direction: row;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap30 {
+  gap: 30px;
+}

@@ -1,0 +1,42 @@
+.table {
+  width: 100%;
+  min-width: 650px;
+
+  border-spacing: 0px;
+  border-collapse: collapse;
+
+  &__body {
+    .table__row:last-child .table__cell {
+      border: none;
+    }
+  }
+
+  &__row {
+    color: inherit;
+    outline: 0px;
+    vertical-align: middle;
+
+    &:not(.table__row_head, .table__row_empty):hover {
+      background-color: var(--bg-hover-table-row);
+    }
+
+    &_empty td {
+      text-align: center;
+    }
+  }
+
+  &__cell {
+    padding: 16px;
+
+    line-height: 1.5;
+    text-align: left;
+    vertical-align: inherit;
+
+    color: var(--color-black-text);
+    border-bottom: var(--base-border);
+
+    &_head {
+      font-weight: 700;
+    }
+  }
+}
